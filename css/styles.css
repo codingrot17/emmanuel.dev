@@ -1,0 +1,465 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+/* Reset and Box Model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Typography and General Styles */
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #000;
+}
+
+.section__container {
+  max-width: 1300px;
+  padding: 0 100px;
+  margin: auto 0 auto 40px;
+}
+
+.max__width {
+  max-width: 1300px;
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navigation Bar Styling */
+header {
+  background-color: #2c3e50;
+  position: fixed;
+  width: 100%;
+  padding: 15px 0;
+  font-family: "Ubuntu", sans-serif;
+  z-index: 999;
+}
+
+header::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  position: absolute;
+  bottom: 0px;
+  animation: linearGradient 2s ease-in-out 1s infinite alternate;
+}
+
+#logo a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.logo_text {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.logo_design {
+  background-image: linear-gradient(to bottom left, #833ab4, #fd1d1d, #fcb045);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.nav-bar .menu li {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+}
+
+.nav-bar .menu li a,
+.logo_text {
+  background-image: linear-gradient(to bottom left, #833ab4, #fd1d1d, #fcb045);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+}
+
+.logo_design {
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-bar .menu li a::after {
+  display: block;
+  content: "";
+  background-image: linear-gradient(to bottom left, #833ab4, #fd1d1d, #fcb045);
+  width: 0;
+  height: 2px;
+  margin: auto;
+  transition: all 0.3s;
+}
+
+.nav-bar .menu li a:hover::after {
+  width: 100%;
+}
+/* Hero Section Styling */
+.hero__section {
+  padding-top: 250px;
+  background: linear-gradient(to bottom, #8e44ad, #2c3e50);
+  height: 100vh;
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.hero__section .section__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero .name {
+  display: flex;
+  flex-direction: column;
+  font-size: 27px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.text-1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.text-1 .text-lg {
+  font-size: 28px;
+}
+
+.hero_img {
+  display: flex;
+  justify-content: right;
+}
+
+.hero_img img {
+  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  padding: 7px;
+  border-radius: 50%;
+  filter: contrast(140%) saturate(1.5) brightness(120%);
+}
+
+.text-2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.hero h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.hero h3 span {
+  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-2 span {
+  background-image: linear-gradient(to right, #ffffff, #fd1d1d, #fcb045);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+.section__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.skills h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-list li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.3);
+  position: relative;
+  padding: 90px 20px 20px;
+  border-radius: 16px;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.card:hover {
+  transform: translateY(-40px);
+}
+
+.card .image {
+  background: #833ab4;
+  border-radius: 50%;
+  padding: 15px;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .image ion-icon {
+  color: #ffffff;
+}
+
+.card .image ion-icon {
+  font-size: 64px;
+}
+
+.card .title h3 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card .features {
+  margin-top: 20px;
+}
+
+.card .features h3 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.card .features ul {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.card .features ul li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .features ul li span {
+  background-image: linear-gradient(to top right, #833ab4, #515c, #fd1d1d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.card .features ul li ion-icon {
+  font-size: 32px;
+  border-radius: 10px;
+  color: #8e44ad;
+}
+
+.card .features ul li i {
+  font-size: 32px;
+  border-radius: 10px;
+  color: #8e44ad;
+}
+
+.project_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  transform-style: preserve-3d;
+}
+
+.project_card {
+  position: relative;
+  perspective: 1000px;
+  width: 300px;
+  height: 200px;
+  margin-bottom: 30px;
+  transform-style: preserve-3d;
+  transition: transform 1.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.project_card:hover {
+  transform: rotateY(180deg);
+}
+
+.project_card .image {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.project_card .image img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.project_front,
+.project_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.project_front {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c3e50;
+  border-radius: 10px;
+}
+
+.project_back {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+}
+
+.project_overview {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.project_overview h3 {
+  font-size: 20px;
+  font-weight: 900;
+  background-image: linear-gradient(to top right, #833ab4, #515c, #fd1d1d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.project_overview p {
+  font-weight: 900;
+}
+
+.name h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 900;
+  background-image: linear-gradient(to bottom left, #833ab4, #fd1d1d, #fcb045);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.projects .button {
+  padding: 10px;
+  background-image: linear-gradient(to top right, #833ab4, #515c, #fd1d1d);
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.projects .more {
+  text-align: center;
+}
+
+.projects .more a {
+  font-weight: 900;
+  background-image: linear-gradient(to top right, #833ab4, #515c, #fd1d1d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+}
+
+.projects .more a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-image: linear-gradient(to top right, #833ab4, #515c, #fd1d1d);
+  position: absolute;
+  margin: auto;
+  left: 0;
+  bottom: 0;
+  transition: all 0.3s;
+}
+
+.projects .more a:hover::after {
+  width: 100%;
+}
+
+.about_me {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  align-items: center; 
+}
+
+.about_me .image img {
+  width: 90%;
+  height: 100%;
+  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  padding: 7px;
+  border-radius: 10px;
+  filter: contrast(130%) saturate(1.5);
+}
+
+.about_me .image {
+  display: flex;
+  justify-content: right;
+}
+
+.about_me .about_text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  line-height: 1.5;
+}
+
+.about_me .outside{
+    display: none;
+}

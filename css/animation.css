@@ -1,0 +1,18 @@
+@keyframes linearGradient {
+    0%{
+        background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    }
+    25%{
+        background: linear-gradient(to right, #fd1d1d, #833ab4, #fcb045);
+    }
+    50%{
+        background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    }
+    75%{
+        background: linear-gradient(to right, #fd1d1d, #833ab4, #fcb045);
+    }
+    100%{
+        background: linear-gradient(to right, #833ab4, #fcb045, #fd1d1d);
+    }
+    
+}
