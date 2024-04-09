@@ -623,20 +623,18 @@ button:hover {
     font-size: 40px;
 }
 
-.modes .whatsapp{
+.modes .whatsapp a{
     color: #1a9d43;
 }
 
-.modes .facebook{
+.modes .facebook a{
     color: #1562ff;
 }
 
-.modes .instagram{
+.modes .instagram a{
     color: #ff5540;
 }
-.main{
-    margin-bottom: 2000px;
-}
+
 /* footer section */
 .portfolio-footer {
   background-color: #2c3e50;
@@ -686,7 +684,7 @@ button:hover {
 }
 
 .social-links a {
-  color: #333;
+  color: #fcb045;
   font-size: 20px;
 }
 
