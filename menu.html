@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Navigation Menu</title>
+<style>
+  /* Styles for desktop navigation */
+  .nav-bar {
+    display: block;
+  }
+
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  /* Styles for mobile navigation */
+  @media screen and (max-width: 600px) {
+    .menu {
+      display: none;
+    }
+
+    .menu.active {
+      display: block;
+    }
+
+    .menu li {
+      display: block;
+      margin: 10px 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation for desktop -->
+<div class="nav-bar">
+  <ul class="menu">
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact Me</a></li>
+  </ul>
+</div>
+
+<!-- Mobile Navigation -->
+<div class="mobile-nav">
+  <button onclick="toggleMenu()">Menu</button>
+  <ul class="menu">
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact Me</a></li>
+  </ul>
+</div>
+
+<script>
+function toggleMenu() {
+  var menu = document.querySelector('.mobile-nav .menu');
+  menu.classList.toggle('active');
+}
+</script>
+
+</body>
+</html>

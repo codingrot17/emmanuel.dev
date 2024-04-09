@@ -110,7 +110,99 @@ header::after {
 .nav-bar .menu li a:hover::after {
   width: 100%;
 }
-/* Hero Section Styling */
+
+/* Styles for desktop navigation */
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .nav-bar{
+      display: block;
+  }
+  
+  .mobile-nav{
+      display: none;
+      
+  }
+  
+  .mobile-nav ul{
+      position: absolute; 
+      width: 100%;
+      background: #101010;
+      left: 0;
+      bottom: -130px;
+      background-color: rgba(44,62,80,0.5);
+      text-align: center;
+      backdrop-filter: blur(10px);
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+  }
+  
+  .mobile-nav ul li a{
+      color: #c39bd3;
+      font-size: 18px;
+      font-weight: 500;
+  }
+  
+  #menuBtn{
+      background: none;
+  }
+  
+  #close{
+      display: none;
+  }
+  
+  #open {
+      background: none;
+   }
+
+  #open.active {
+      background: linear-gradient(to bottom left, #833ab4, #fd1d1d, #fcb045);
+      border-radius: 10px;
+  }
+  
+  #glow-on-hover{
+      width: 200px;
+      height: 50px;
+      border: none;
+      outline: none;
+      color: #c39bd3;
+      cursor: pointer;
+      position: relative;
+      z-index: 999;
+      border-radius: 10px;
+      background: none;
+  }
+  
+  #glow-on-hover:before{
+      content: "";
+      background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      background-size: 400%;
+      z-index: 888;
+      filter: blur(5px);
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      animation: glowing 20s linear infinite;
+      opacity: 0;
+      transition: opacity .3s ease-in-out;
+      border-radius: 10px;
+  }
+/* Hero Section Stcolor: #c39bd3;yling */
 .hero__section {
   padding-top: 250px;
   background: linear-gradient(to bottom, #8e44ad, #2c3e50);
@@ -313,7 +405,7 @@ header::after {
   height: 200px;
   margin-bottom: 30px;
   transform-style: preserve-3d;
-  transition: transform 1.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   border-radius: 10px;
 }
 
@@ -462,4 +554,147 @@ header::after {
 
 .about_me .outside{
     display: none;
+}
+
+
+#contact {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Contact section */
+.contact_me h3{
+    background-image: linear-gradient(to bottom left, #833ab4, #fd1d1d, #fcb045);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+}
+
+.contact_me h3 span{
+    background-image: linear-gradient(to top right, #833ab4, #515c, #fd1d1d);
+  -webkit-background-clip: text;   background-clip: text;
+  color: transparent;
+  position: relative;  
+     
+}
+
+.modes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 40px;
+}
+
+.modes .whatsapp{
+    color: #1a9d43;
+}
+
+.modes .facebook{
+    color: #1562ff;
+}
+
+.modes .instagram{
+    color: #ff5540;
+}
+.main{
+    margin-bottom: 2000px;
+}
+/* footer section */
+.portfolio-footer {
+  background-color: #2c3e50;
+  
+  width: 100%;
+  padding: 15px 0;
+  bottom: 0;
+  font-family: "Ubuntu", sans-serif;
+  z-index: 999;
+  font-size: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content a{
+    color: #833ab4;
+}
+
+.footer-content p{
+    color: #fcb045;
+    
+}
+
+.footer-left h3 {
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+.social-links li {
+  margin-right: 10px;
+}
+
+.social-links a {
+  color: #333;
+  font-size: 20px;
+}
+
+.copy{
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(to top right, #fd1d1d, #fdfdfd, #833ab4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
